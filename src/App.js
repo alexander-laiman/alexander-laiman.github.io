@@ -2,8 +2,8 @@ import portrait from "./img/1718258605229.jpg";
 import linkedinlogo from "./img/LinkedIn-Logos/In/Digital/White/2x/In-White-128@2x.png";
 import githublogo from "./img/GitHub Logos/SVG/GitHub_Invertocat_Light.svg";
 import paperemoji from "./img/page_facing_up.svg";
-import imgtest from "./img/_DSF4084.JPG";
-import imgtest2 from "./img/_DSF4079.JPG";
+import imgtest from "./img/DSF4084.JPG";
+import imgtest2 from "./img/DSF4079.JPG";
 import "./App.css";
 
 function App() {
