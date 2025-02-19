@@ -5,7 +5,7 @@ import paperemoji from "./img/page_facing_up.svg";
 import papertex from "./img/paper-texture_1194-5999.jpg";
 import "./App.css";
 
-const images = require.context("./img/gallery", false);
+const images = require.context("./img/gallery/optim", false);
 const imageList = images.keys().map((image) => images(image));
 
 function ImageGallery() {
