@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: white;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -11,18 +10,18 @@
 }
 
 .App-header {
-  background-color: white;
+  /* background-color: white; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  text-align: left;
+  text-align: center;
   font-size: calc(10px + 2vmin);
   color: black;
 }
 .spanSpace {
-  height: 32px;
+  height: 80px;
 }
 .App-link {
   filter: grayscale();
@@ -31,8 +30,8 @@
 .projectTiles {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-items: left;
+  align-items: center;
+  justify-items: center;
   max-width: 80%;
   text-decoration: underline;
 }
@@ -41,7 +40,7 @@
   align-items: left;
   justify-self: left;
   align-content: left;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(6px + 2vmin);
   font-style: italic;
   color: black;
 }
@@ -49,22 +48,25 @@
 .Project-Preview {
   max-height: 100%;
   max-width: 100%;
-  border-radius: 0px;
+  border-radius: 2px;
   margin-bottom: 24px;
   object-fit: scale-down;
   justify-content: center;
+  align-self: center;
+  border-style: inset;
+  border-color: ivory;
 }
 
 .LinkLogos {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   align-self: center;
   justify-self: center;
   padding: 4px;
 }
 .LinkLogos1 {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   align-self: center;
   justify-self: center;
   padding: 4px;
