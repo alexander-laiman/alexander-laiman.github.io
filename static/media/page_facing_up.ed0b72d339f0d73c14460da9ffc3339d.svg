@@ -1,0 +1,22 @@
+
+      <svg 
+        width="128" 
+        height="128" 
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 128 128"
+        role="img"
+        aria-label="Page Facing Up emoji"
+      >
+        <title>Page Facing Up Emoji</title>
+        <desc>Vector representation of Page Facing Up emoji</desc>
+        <text
+          x="64"
+          y="64"
+          font-size="96"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          font-family="serif"
+          aria-hidden="true"
+        >📄</text>
+      </svg>
+    
