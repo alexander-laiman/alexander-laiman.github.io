@@ -1,6 +1,6 @@
 import portrait from "./img/1718258605229.jpg";
-import linkedinlogo from "./img/LinkedIn-Logos/In/Digital/White/2x/In-White-128@2x.png";
-import githublogo from "./img/GitHub Logos/SVG/GitHub_Invertocat_Light.svg";
+import linkedinlogo from "./img/LinkedIn-Logos/In/Digital/Blue/2x/In-Blue-128-Γö¼┬½@2x.png";
+import githublogo from "./img/GitHub Logos/SVG/GitHub_Invertocat_Dark.svg";
 import paperemoji from "./img/page_facing_up.svg";
 import imgtest from "./img/DSF4084.JPG";
 import imgtest2 from "./img/DSF4079.JPG";
@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="spanSpace" />
         <img src={portrait} className="App-logo" alt="logo" />
         <h>Alexander Laiman</h>
         <div className="socialLinks">
@@ -39,10 +40,11 @@ function App() {
           </a>
         </div>
         <div className="projectTiles">
-          <img src={imgtest} className="Project-Preview" />
-          <img src={imgtest2} className="Project-Preview" />
-          <img src={imgtest} className="Project-Preview" />
-          <img src={imgtest2} className="Project-Preview" />
+          <header className="projectHeaders">Street</header>
+          <img src={imgtest} className="Project-Preview fade-in" />
+          <img src={imgtest2} className="Project-Preview fade-in" />
+          <img src={imgtest} className="Project-Preview fade-in" />
+          <img src={imgtest2} className="Project-Preview fade-in" />
         </div>
       </header>
     </div>
