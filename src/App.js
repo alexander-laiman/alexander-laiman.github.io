@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="spanSpace" />
-        <img src={portrait} className="App-logo" alt="logo" />
+        {/* <img src={portrait} className="App-logo" alt="logo" /> */}
         <h>Alexander Laiman</h>
         <div className="socialLinks">
           <a
@@ -24,19 +24,19 @@ function App() {
           </a>
           <a
             className="App-link"
+            href="https://drive.google.com/file/d/1ii2J-1499_3pgfik1tTDMnEks5dGLZHq/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={paperemoji} className="LinkLogos1" alt="resume" />
+          </a>
+          <a
+            className="App-link"
             href="https://github.com/alexander-laiman"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={githublogo} className="LinkLogos" alt="Github" />
-          </a>
-          <a
-            className="App-link"
-            href="https://drive.google.com/file/d/1ii2J-1499_3pgfik1tTDMnEks5dGLZHq/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={paperemoji} className="LinkLogos" alt="resume" />
           </a>
         </div>
         <div className="projectTiles">

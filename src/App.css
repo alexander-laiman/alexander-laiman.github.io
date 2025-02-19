@@ -5,8 +5,6 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
   border-radius: 0px;
   justify-self: center;
   align-items: center;
@@ -27,7 +25,7 @@
   height: 32px;
 }
 .App-link {
-  color: #61dafb;
+  filter: grayscale();
 }
 
 .projectTiles {
@@ -44,6 +42,7 @@
   justify-self: left;
   align-content: left;
   font-size: calc(10px + 2vmin);
+  font-style: italic;
   color: black;
 }
 
@@ -57,10 +56,17 @@
 }
 
 .LinkLogos {
-  min-width: 48px;
-  max-width: 48px;
-  align-items: center;
-  justify-content: center;
+  width: 36px;
+  height: 36px;
+  align-self: center;
+  justify-self: center;
+  padding: 4px;
+}
+.LinkLogos1 {
+  width: 45px;
+  height: 45px;
+  align-self: center;
+  justify-self: center;
   padding: 4px;
 }
 
