@@ -1,0 +1,16 @@
+.Main-Image-Box {
+  flex-direction: column;
+}
+.Secondary-Image-Column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.Header {
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Description {
+  font-family: "Times New Roman", Times, serif;
+}

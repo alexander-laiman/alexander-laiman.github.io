@@ -1,0 +1,113 @@
+.Nav {
+  /* text-align: center; */
+  font-family: "Times New Roman", Times, serif;
+}
+
+.NavLinks {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 0px;
+  margin-bottom: 0px;
+  :visited {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Optional: Remove underline if you want */
+  }
+}
+.Nav-logo {
+  border-radius: 0px;
+  justify-self: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.Nav-header {
+  /* background-color: white; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: left; */
+  /* align-items: center; */
+  /* text-align: center; */
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin: 10px;
+  word-spacing: 10px;
+  list-style-type: none;
+}
+.spanSpace {
+  height: 80px;
+}
+.App-link {
+  filter: grayscale();
+}
+
+.projectTiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  max-width: 80%;
+  text-decoration: underline;
+}
+
+.projectHeaders {
+  align-items: left;
+  justify-self: left;
+  align-content: left;
+  font-size: calc(6px + 2vmin);
+  font-style: italic;
+  color: black;
+}
+
+.Project-Preview {
+  max-height: 90vh;
+  max-width: 100%;
+  border-radius: 2px;
+  margin-bottom: 48px;
+  object-fit: scale-down;
+  justify-content: center;
+  align-self: center;
+  border-style: inset;
+  border-color: ivory;
+}
+
+.LinkLogos {
+  width: 32px;
+  height: 32px;
+  align-self: center;
+  justify-self: center;
+  padding: 4px;
+}
+.LinkLogos1 {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  justify-self: center;
+  padding: 4px;
+}
+
+.socialLinks {
+  /* flex: auto; */
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  /*Uses scrollAnimation.js*/
+  opacity: 30;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
