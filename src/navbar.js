@@ -45,7 +45,7 @@ const Navbar = () => {
         </a>
         <a
           className="App-link"
-          href="https://drive.google.com/file/d/1ii2J-1499_3pgfik1tTDMnEks5dGLZHq/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ECdrIybn06WrNljSRx7dNy4UwFyDn5zU/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
