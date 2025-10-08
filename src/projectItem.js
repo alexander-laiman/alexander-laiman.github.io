@@ -18,23 +18,25 @@ const ProjectItem = ({ title, desc, link, linkDesc, im1, im2, im3 }) => {
           flexDirection: "row",
           width: "100%",
           maxWidth: "1000px",
-          border: "2px solid #ccc",
-          borderRadius: "8px",
           overflow: "hidden",
           backgroundColor: "#fff",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+          marginBottom: "48px",
+          boxShadow: "8px 8px 0px rgba(0, 0, 0, 0.3)",
+          borderRadius: "0px",
+          border: "1px solid ivory",
         }}
       >
         <div className="Main-Image-Box">
           <img
             src={im1}
             alt="Primary Image"
+            className="paper-frame"
             style={{ 
               width: "100%", 
               height: "auto", 
               maxHeight: "300px", 
               objectFit: "cover",
-              borderRadius: "4px"
+              display: "block"
             }}
           />
           <header className="Header">{title}</header>
@@ -46,24 +48,26 @@ const ProjectItem = ({ title, desc, link, linkDesc, im1, im2, im3 }) => {
             <img
               src={im2}
               alt="Secondary Image 1"
+              className="paper-frame"
               style={{
                 width: "100%",
                 height: "auto",
                 maxHeight: "200px",
                 objectFit: "cover",
-                borderRadius: "4px"
+                display: "block"
               }}
             />
             {im3 && (
               <img 
                 src={im3} 
                 alt="Secondary Image 2"
+                className="paper-frame"
                 style={{
                   width: "100%",
                   height: "auto",
                   maxHeight: "200px",
                   objectFit: "cover",
-                  borderRadius: "4px"
+                  display: "block"
                 }}
               />
             )}

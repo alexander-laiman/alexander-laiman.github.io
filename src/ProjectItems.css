@@ -29,6 +29,18 @@
 /* Project card responsive design */
 .project-card {
   flex-direction: row;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  border: 1px solid gray;
+}
+
+/* Paper frame styling to match homepage */
+.paper-frame {
+  border-style: inset;
+  border-color: ivory;
+  border-radius: 2px;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
 /* Responsive design for mobile devices */
@@ -37,6 +49,9 @@
     flex-direction: column !important;
     max-width: 100% !important;
     margin: 10px 0 !important;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0px !important;
+    border: 1px solid ivory !important;
   }
   
   .Main-Image-Box {
@@ -85,6 +100,9 @@
   
   .project-card {
     margin: 5px 0 !important;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0px !important;
+    border: 1px solid ivory !important;
   }
   
   .Main-Image-Box,
