@@ -28,10 +28,35 @@
 
 /* Project card responsive design */
 .project-card {
-  flex-direction: row;
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 0px;
-  border: 1px solid gray;
+  flex-direction: column;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  border: 0.5px solid lightgray;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 40px;
+}
+
+/* Project content section */
+.project-content {
+  padding: 20px;
+}
+
+/* Additional images row */
+.additional-images-row {
+  display: flex;
+  gap: 10px;
+  padding: 0 20px 20px 20px;
+}
+
+.additional-image {
+  flex: 1;
+  margin: 0;
+}
+
+/* Ensure first cards in columns align at top */
+.project-item-container:first-child {
+  margin-top: 0;
 }
 
 /* Paper frame styling to match homepage */
@@ -43,23 +68,41 @@
   box-sizing: border-box;
 }
 
+/* Override paper frame margin for hero images */
+.paper-frame.hero-image {
+  margin: 20px;
+  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  height: auto;
+  object-fit: contain;
+}
+
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
   .project-card {
-    flex-direction: column !important;
     max-width: 100% !important;
     margin: 10px 0 !important;
-    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3) !important;
-    border-radius: 0px !important;
-    border: 1px solid ivory !important;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 1px !important;
+    border: 0.5px solid lightgray !important;
   }
   
-  .Main-Image-Box {
+  .project-content {
     padding: 15px;
   }
   
-  .Secondary-Image-Column {
-    padding: 15px;
+  .hero-image {
+    margin: 15px;
+  }
+  
+  .paper-frame.hero-image {
+    margin: 15px;
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+  
+  .additional-images-row {
+    padding: 0 15px 15px 15px;
     gap: 8px;
   }
   
@@ -76,20 +119,31 @@
   .project-item-container {
     margin: 10px 0 !important;
     padding: 0 5px !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }
 
-/* Responsive grid layout */
+/* Responsive column layout */
 @media (max-width: 1300px) {
-  .projects-grid {
-    grid-template-columns: 1fr !important;
+  .projects-container {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  .projects-column {
+    gap: 20px !important;
   }
 }
 
 /* Extra small mobile devices */
 @media (max-width: 480px) {
-  .projects-grid {
+  .projects-container {
     padding: 5px !important;
+    gap: 15px !important;
+  }
+  
+  .projects-column {
     gap: 15px !important;
   }
   
@@ -100,13 +154,27 @@
   
   .project-card {
     margin: 5px 0 !important;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3) !important;
-    border-radius: 0px !important;
-    border: 1px solid ivory !important;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 1px !important;
+    border: 0.5px solid lightgray !important;
   }
   
-  .Main-Image-Box,
-  .Secondary-Image-Column {
+  .project-content {
     padding: 10px !important;
+  }
+  
+  .hero-image {
+    margin: 10px !important;
+  }
+  
+  .paper-frame.hero-image {
+    margin: 10px !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+  
+  .additional-images-row {
+    padding: 0 10px 10px 10px !important;
+    gap: 5px !important;
   }
 }

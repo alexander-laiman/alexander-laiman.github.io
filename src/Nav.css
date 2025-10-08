@@ -10,9 +10,30 @@
   font-size: 20px;
   padding: 0px;
   margin-bottom: 0px;
+  position: relative;
+  transition: all 0.3s ease;
+  
   :visited {
     color: inherit; /* Inherit the color from the parent element */
     text-decoration: none; /* Optional: Remove underline if you want */
+  }
+  
+  /* Animated underline */
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 50%;
+    background-color: black;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  /* Hover effect */
+  &:hover::after {
+    width: 100%;
   }
 }
 .Nav-logo {
