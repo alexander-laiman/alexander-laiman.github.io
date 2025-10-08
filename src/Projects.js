@@ -104,7 +104,7 @@ const projectsData = [
       primary: null
     },
     link: {
-      url: "https://gg.deals/application/wayports/",
+      url: "https://store.steampowered.com/app/1548970/Wayports/",
       description: "See more details here"
     }
   },
