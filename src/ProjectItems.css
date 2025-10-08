@@ -1,16 +1,94 @@
 .Main-Image-Box {
+  display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
 }
 .Secondary-Image-Column {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  gap: 10px;
 }
 .Header {
   font-family: "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
+  margin: 10px 0;
+  font-size: 1.2em;
 }
 .Description {
   font-family: "Times New Roman", Times, serif;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Project card responsive design */
+.project-card {
+  flex-direction: row;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column !important;
+    max-width: 100% !important;
+    margin: 10px 0 !important;
+  }
+  
+  .Main-Image-Box {
+    padding: 15px;
+  }
+  
+  .Secondary-Image-Column {
+    padding: 15px;
+    gap: 8px;
+  }
+  
+  .Header {
+    font-size: 1em;
+  }
+  
+  /* Ensure mobile cards don't overflow */
+  .projects-grid {
+    padding: 10px !important;
+    gap: 20px !important;
+  }
+  
+  .project-item-container {
+    margin: 10px 0 !important;
+    padding: 0 5px !important;
+  }
+}
+
+/* Responsive grid layout */
+@media (max-width: 1300px) {
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .projects-grid {
+    padding: 5px !important;
+    gap: 15px !important;
+  }
+  
+  .project-item-container {
+    margin: 5px 0 !important;
+    padding: 0 2px !important;
+  }
+  
+  .project-card {
+    margin: 5px 0 !important;
+  }
+  
+  .Main-Image-Box,
+  .Secondary-Image-Column {
+    padding: 10px !important;
+  }
 }
