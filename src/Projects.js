@@ -32,6 +32,8 @@ const wap = require.context("./projects/wap", false);
 const waplist = wap.keys().map((image) => wap(image));
 const pr = require.context("./projects/pr", false);
 const prlist = pr.keys().map((image) => pr(image));
+const aviad = require.context("./projects/aviad", false);
+const aviadlist = aviad.keys().map((image) => aviad(image));
 function Projects() {
   return (
     <div
@@ -66,6 +68,13 @@ function Projects() {
         im1={museumlist[0]}
         linkDesc="Site no longer live due to running costs."
         link="https://www.britishmuseum.org/"
+      />
+      <ProjectItem
+        title="Aviad AI - Engine Native SLM Tooling"
+        desc="Created local inference tooling for running AI in engine for Unreal and Unity. Created and polished game demos for outreach, and created in editor tooling for Unity AI character dialogue systems."
+        im1={aviadlist[0]}
+        im2={aviadlist[1]}
+        im3={aviadlist[2]}
       />
       <ProjectItem
         title="Exploring RAG/LLM Enabled NPCs"
